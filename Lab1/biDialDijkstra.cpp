@@ -9,7 +9,7 @@
 
 using namespace std;
 
-const double INF = numeric_limits<double>::infinity();
+const int INF = numeric_limits<int>::max();
 
 void create_graph_converted(int &n, int &m, int &s, int &d,
                             vector<vector<pair<int, int>>> &graph, int &max_weight) {
@@ -35,7 +35,7 @@ bool relax_dial(
     vector<deque<int>>& buckets_A, 
     const vector<int>& dist_B, 
     int& idx_A,
-    int& min_dist, 
+    int& min_dist,
     const vector<vector<pair<int, int>>>& graph,
     int max_weight) {
     /*
